@@ -29,7 +29,7 @@ points:
   zones:
     matrix:
       # anchor:
-      #   rotate: 5
+      rotate: 7
       key.padding: ky
       columns:
         pinky:
@@ -38,8 +38,9 @@ points:
           key:
             column_net: P20
         ring:
-          stagger: 0.7 ky
-          spread: kx
+          stagger: 0.8 ky
+          spread: 1.1kx
+          rotate: -7
           key:
             column_net: P19
         middle:
@@ -67,11 +68,11 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-1.5 kx, -1 ky]
+        shift: [-1.6 kx, -1.05 ky]
       columns:
         near:
           spread: kx
-          rotate: -15
+          rotate: -10
           origin: [-0.5 kx, -0.5 ky]
           key:
             column_net: P18
@@ -441,4 +442,3 @@ pcbs:
           layer: B.SilkS
           text: "samoklava v0.1\\nby soundmonster"
           justify: right mirror
-
